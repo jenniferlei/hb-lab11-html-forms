@@ -2,8 +2,9 @@
 <html>
     <head>
         <title>
-            <h1>Order a Melongram</h1>
+            Order a Melongram
         </title>
+        <h1>Order a Melongram</h1>
     </head>
 
     <body>
@@ -28,7 +29,7 @@
                 <td>$1,200.00</td>
             </tr>
             <tr>
-                <td>Canteloupe</td>
+                <td>Cantaloupe</td>
                 <td>$400.00</td>
             </tr>
             <tr>
@@ -37,25 +38,46 @@
             </tr>
         </table>
 
-        Order Form
+        <h2>Order Form</h2>
 
-        Your name
+        <form>
+            Your name <input type="text" name="name">
 
-        Who are we sending this to?
+            <br>Who are we sending this to? <input type="text" name="recipient">
 
-        Choose a melon
-        Watermleon
-        Canteloupe
-        Honeydew
+            <br>Choose a melon
 
-        When should we deliver?
-        Morning
-        Evening
-        Any time
+            <select name="melon">
+                <option value="Watermelon">Watermelon</option>
+                <option value="Cantaloupe">Cantaloupe</option>
+                <option value="Honeydew">Honeydew</option>
+            </select>
 
-        Enter your message:
+            <br>When should we deliver?
 
-        Subscribe to our newsletter
-        Yes
+            <input type="radio" name="time" value="am" id="am">
+            <label for="am">Morning</label>
+
+            <input type="radio" name="time" value="pm" id="pm">
+            <label for="pm">Evening</label>
+
+            <input type="radio" name="time" value="any" id="any">
+            <label for="any">Any time</label>
+            
+            <p>
+                Enter your message:
+            </p>
+
+            <textarea name="message"></textarea>
+
+            <br>Subscribe to our newsletter
+
+            <input type="checkbox" name="subscribe" value="yes">
+            <label>Yes</label>
+            
+            <br>
+            <input type="submit" value="Submit Query">
+
+        </form>
     </body>
 </html>
